@@ -1,3 +1,18 @@
+<html>
+<head>
+<title>memory</title>
+<meta charset='utf-8'>
+</head>
+
+<body>
+This shows the memory usage with time
+
+<div id="container" style="height: 400px; min-width: 310px"></div>
+
+<script src='/static/jquery.js'></script>
+<script src='/static/highstock.js'></script>
+<script src='/static/exporting.js'></script>
+
 
 <div id="container" style="height: 400px; min-width: 310px"></div>
 
@@ -36,7 +51,7 @@ $(function () {
             },
 
             title : {
-                text : '内存数据'
+                text : 'memory usage'
             },
 
             series : [{
@@ -51,4 +66,7 @@ $(function () {
 
 });
 </script>
+
+</body>
+</html>
 

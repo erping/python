@@ -1,3 +1,10 @@
+import time
+import MySQLdb as mysql
+
+db = mysql.connect(user="root",passwd="erpingtang",db="memory",host="localhost")
+db.autocommit(True)
+cur = db.cursor()
+
 
 def getMem():
     with open('/proc/meminfo') as f:
