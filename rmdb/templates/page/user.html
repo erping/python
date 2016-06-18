@@ -1,0 +1,15 @@
+
+{% extends "layout.html" %}
+{% block body %}
+{% endblock %}
+    
+{% block js %}
+    <script>	
+        $(function() {
+            $.rebootOps(
+              {"data": [{"name": "username", "title": "\u7528\u6237\u540d"}, {"name": "password", "title": "\u5bc6\u7801"}], "name": "user", "title": "\u7528\u6237\u7ba1\u7406"}
+            )
+        })
+    </script>
+{% endblock %}
+
